@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dutch Traffic Light System</title>
+
+  <!-- Prism.js syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+
+  <!-- Includes the stylesheet file styles.css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Fixed Navigation Menu -->
+  <nav id="menu">
+    <h3>Menu</h3>
+    <ul>
+      <li><a href="#top">Title</a></li>
+      <li><a href="#information">Project Information</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#circuit-diagram">Circuit</a></li>
+      <li><a href="#environment">Environment</a></li>
+      <li><a href="#bom">BoM</a></li>
+      <li><a href="#prototype">Prototype</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+  </nav>
+
+
+  <h1 id="top">Collision Warning System</h1>
+
+  <section id="information">
+    <h2>Project Information</h2>
+    <p><strong>Course:</strong> TECH 117 (Computer Engineering Technology, Fall 2025)</p>
+    <p><strong>Instructor:</strong> Ph.D. Ana Rodrigues</p>
+    <p><strong>Group 25, Team Members:</strong></p>
+    <ul>
+      <li>Ahkeens Broomes</li>
+      <li>Ryan Di Lorenzo</li>
+      <li>Andrew Paley</li>
+      <li>Vince Benedict Violago</li>
+    </ul>
+  </section>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>This project uses an <strong>Arduino Uno</strong>, an <strong>HC-SR04 ultrasonic sensor</strong>, a
+      <strong>passive buzzer</strong>, and <strong>red/yellow/green LEDs</strong> to provide proximity-based
+      alerts, similar to automotive collision detection systems.
+    </p>
+  </section>
+
+  <section id="circuit-diagram">
+    <h2>Circuit Diagram</h2>
+    <p>The ultrasonic sensor measures distance; the Arduino activates LEDs and the buzzer according to distance
+      thresholds.</p>
+    <img src="Images\Circuit Simulation.png" alt="Dutch Traffic Light System">
+  </section>
+
+  <section id="environment">
+    <h2>Environmental Impact Assessment</h2>
+    <ul>
+      <li><strong>Materials:</strong> The Arduino Uno is RoHS and WEEE compliant, limiting hazardous substances.
+      </li>
+      <li><strong>Energy Efficiency:</strong> The circuit draws minimal power (~50 mA at 5V), ideal for USB or
+        solar power.</li>
+      <li><strong>Reusability:</strong> All components are modular and reusable, reducing electronic waste.</li>
+      <li><strong>Packaging & Shipping:</strong> Ordering all components from a single supplier helps minimize
+        carbon footprint.</li>
+    </ul>
+  </section>
+
+  <section id="bom">
+    <h2>Bill of Materials (BoM)</h2>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Foundational Project Traffic Light BOM - Sheet1</title>
+</head>
+<body>
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Descriotion</th>
+        <th>QTY</th>
+        <th>Specifications</th>
+        <th>Esttimated Cost</th>
+        <th>Total Cost</th>
+        <th>Supplier/ Part#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>DFRduino</td>
+        <td>1</td>
+        <td>5v microcontroller Board, ATmega328P</td>
+        <td>$12.90</td>
+        <td>$12.90</td>
+        <td><a href="https://www.dfrobot.com/product-216.html">DFR0216</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>multiplexer</td>
+        <td>1</td>
+        <td>PCA96</td>
+        <td>$2.00</td>
+        <td>$2.00</td>
+        <td>Multiplexer</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>5mm LED Red</td>
+        <td>12</td>
+        <td>Optoelectronics/LED Indication - Discrete</td>
+        <td>$0.03</td>
+        <td>$0.39</td>
+        <td>5mm LED Red</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5mm LED yellow</td>
+        <td>12</td>
+        <td>Optoelectronics/LED Indication - Discrete</td>
+        <td>$0.03</td>
+        <td>$0.39</td>
+        <td>5mm LED yellow</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>5mm LED Green</td>
+        <td>12</td>
+        <td>Optoelectronics/LED Indication - Discrete</td>
+        <td>$0.03</td>
+        <td>$0.39</td>
+        <td>5mm LED Green</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>hot wheels cars</td>
+        <td>10</td>
+        <td>Hot Wheels 10-Pack of Toy Race Cars, Includes 1:6</td>
+        <td></td>
+        <td>$0.00</td>
+        <td><a href="https://shop.mattel.com/pages/hot-wheels">Hot Wheels Originals</a></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>resistors</td>
+        <td>40</td>
+        <td>1206 smd 300 ohm</td>
+        <td></td>
+        <td>$2.00</td>
+        <td>RT1206BRD07300RL</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>computer (for programming)</td>
+        <td>1</td>
+        <td>any with arduino ide</td>
+        <td>$0.00</td>
+        <td>$0.00</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>40 jumper wire ribbon</td>
+        <td>1</td>
+        <td>male to male</td>
+        <td>$2.95</td>
+        <td>$2.95</td>
+        <td><a href="https://www.adafruit.com/product/1956">Male to Male Jumper Cable x 40 (20cm)</a></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>TLC555 timer</td>
+        <td>30</td>
+        <td>2MHz clock generator</td>
+        <td>$0.20</td>
+        <td>$6.10</td>
+        <td><a href="https://www.ti.com/product/TLC555">Timers and Oscillators RoHS</a></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>1/2 inch plywood board</td>
+        <td>1</td>
+        <td>24 inch * 48 inch</td>
+        <td>$17.51</td>
+        <td>$17.51</td>
+        <td><a href="https://www.homedepot.com/">Home Depot</a></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Potentiometers</td>
+        <td>12</td>
+        <td>BOCHEN 3362P-1-103</td>
+        <td>$0.13</td>
+        <td>$1.60</td>
+        <td>Potentiometers</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Fuses</td>
+        <td>4</td>
+        <td>Circuit Protection/Fuses Littelfuse 0435003.KRHF</td>
+        <td>$0.64</td>
+        <td>$2.56</td>
+        <td><a href="https://www.littelfuse.com/products/fuses.aspx">0435003.KRHF | Littelfuse</a></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>620 Resistors</td>
+        <td>20</td>
+        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
+        <td>$0.00</td>
+        <td>$0.09</td>
+        <td>620 Resistors</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>USB Connector</td>
+        <td>4</td>
+        <td>USB type c connectors</td>
+        <td>$0.20</td>
+        <td>$0.78</td>
+        <td>USB Connector</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>5.1kQ Resistors</td>
+        <td>8</td>
+        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
+        <td>$0.00</td>
+        <td>$0.00</td>
+        <td>5.1kQ Resistors</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>49.9kQ Resistors</td>
+        <td>20</td>
+        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
+        <td>$0.00</td>
+        <td>$0.01</td>
+        <td>49.9kQ Resistors</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>00 Resistors</td>
+        <td>20</td>
+        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
+        <td>$0.00</td>
+        <td>$0.08</td>
+        <td>00 Resistors</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>10uF Capacitors</td>
+        <td>50</td>
+        <td>Passives/Capacitors/Ceramic Capacitors</td>
+        <td>$0.01</td>
+        <td>$0.31</td>
+        <td>10uF Capacitors</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>1nF Capacitors</td>
+        <td>50</td>
+        <td>Passives/Capacitors/Ceramic Capacitors</td>
+        <td>$0.00</td>
+        <td>$0.06</td>
+        <td>1nF Capacitors</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>10uF Capacitors</td>
+        <td>50</td>
+        <td>Passives/Capacitors/Ceramic Capacitors</td>
+        <td>$0.00</td>
+        <td>$0.09</td>
+        <td>10uF Capacitors</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Receptacles, Female Sockets</td>
+        <td>50</td>
+        <td>Connectors, Interconnects/Rectangular Connectors</td>
+        <td>$0.05</td>
+        <td>$2.43</td>
+        <td>Receptacles, Female Sockets</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Receptacles, Female Sockets</td>
+        <td>50</td>
+        <td>Connectors, Interconnects/Rectangular Connectors</td>
+        <td>$0.07</td>
+        <td>$3.62</td>
+        <td>Receptacles, Female Sockets</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>3.3nF Capacitors</td>
+        <td>20</td>
+        <td>Passives/Capacitors/Ceramic Capacitors</td>
+        <td>$0.00</td>
+        <td>$0.02</td>
+        <td>3.3nF Capacitors</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>TLV76133DCY</td>
+        <td>4</td>
+        <td>Integrated Circuits (ICs)/Power Management (PMIC)</td>
+        <td>$0.22</td>
+        <td>$0.89</td>
+        <td>6QUA Low Drop Out (LDO) Regulators</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>A03415</td>
+        <td>4</td>
+        <td>Discrete Semiconductors/FETs, MOSFETs/Single</td>
+        <td>$0.01</td>
+        <td>$0.06</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>3.3nF Capacitors</td>
+        <td>20</td>
+        <td>Passives/Capacitors/Ceramic</td>
+        <td>$0.00</td>
+        <td>$0.04</td>
+        <td>3.3nF Capacitors</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>5100 Resistor</td>
+        <td>20</td>
+        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
+        <td>$0.00</td>
+        <td>$0.04</td>
+        <td>5100 Resistor</td>
+      </tr>
+      <tr>
+        <td colspan="4">Total Cost</td>
+        <td></td>
+        <td>$55.31</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+
+  <section id="prototype">
+    <h2>Prototype</h2>
+    <p>The following image shows the assembled prototype on a breadboard.</p>
+    <img src="prototype.jpg" alt="Collision warning system prototype">
+  </section>
+
+  <section id="code">
+    <h2>Arduino Code</h2>
+    <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on distance
+      readings from the HC-SR04 sensor.</p>
+
+    <pre class="line-numbers">
+  <button class="copy-btn" onclick="copyCode()">Copy</button>
+  <code id="arduinoCode" class="language-cpp">
+// Collision Warning System with Distance Sensor (HC-SR04)
+// Author: Ana Rodrigues
+// Oct 2, 2025
+// Object is farther than 50cm: Green LED lights up
+// Object is closer than 50 cm, but more than 10cm away: Yellow LED lights, buzzer plays 300Hz tone
+// Object is closer than 10cm: Red LED lights up, buzzer plays 500Hz tone
+
+//LED pins
+const int greenLED = 2;
+const int yellowLED = 3;
+const int redLED = 4;
+
+// Ultrasonic sensor pins
+const int trigPin = 9;
+const int echoPin = 10;
+
+// Passive buzzer pin
+const int buzzer = 11;
+
+void setup() {
+  pinMode(greenLED, OUTPUT);
+  pinMode(yellowLED, OUTPUT);
+  pinMode(redLED, OUTPUT);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Measure distance
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  long duration = pulseIn(echoPin, HIGH);
+  long distance = duration * 0.034 / 2;
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+  
+  //Error in measurement:
+  if (distance <= 0)
+    return;
+
+  //Too close:
+  if (distance <= 10) {
+    digitalWrite(greenLED, LOW);
+    digitalWrite(yellowLED, LOW);
+    digitalWrite(redLED, HIGH);
+    tone(buzzer, 500); // Play 500Hz tone
+    return;
+  }
+
+  //Midrange:
+  if (distance <= 30) {
+    digitalWrite(greenLED, LOW);
+    digitalWrite(yellowLED, HIGH);
+    digitalWrite(redLED, LOW);
+    tone(buzzer, 300); // Play 300Hz tone
+    return;
+  }
+
+  //Normal status:
+  digitalWrite(greenLED, HIGH);
+  digitalWrite(yellowLED, LOW);
+  digitalWrite(redLED, LOW);
+  noTone(buzzer); // stop buzzer
+
+  delay(100);
+}
+    </code></pre>
+
+    <script>
+      function copyCode() {
+        const code = document.getElementById('arduinoCode').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          alert('Code copied to clipboard!');
+        });
+      }
+    </script>
+  </section>
+
+
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>The system effectively demonstrates distance-based alerting using Arduino. It’s affordable, educational, and
+      sustainable through reusable components.</p>
+  </section>
+
+ <section id="references">
+  <h2>References</h2>
+  <p>
+    The following external resources and example projects demonstrate related Arduino applications 
+    using ultrasonic distance sensors, passive buzzers, and multicolour LEDs:
+  </p>
+
+  <ul>
+    <li>
+      Arduino Project Hub. (n.d.). 
+      <em>Ultrasonic sensor projects.</em> 
+      Arduino Project Hub. 
+      <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank" rel="noopener noreferrer">
+        https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
+      </a>
+    </li>
+
+    <li>
+      Arduino Project Hub. (n.d.). 
+      <em>Buzzer projects.</em> 
+      Arduino Project Hub. 
+      <a href="https://create.arduino.cc/projecthub/projects/tags/buzzer" target="_blank" rel="noopener noreferrer">
+        https://create.arduino.cc/projecthub/projects/tags/buzzer
+      </a>
+    </li>
+
+    <li>
+      Arduino Project Hub. (n.d.). 
+      <em>LED projects.</em> 
+      Arduino Project Hub. 
+      <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
+        https://projecthub.arduino.cc/projects/tags/led
+      </a>
+    </li>
+
+    <li>
+      Instructables. (n.d.). 
+      <em>Distance measurement using ultrasonic sensor.</em> 
+      Instructables. 
+      <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank" rel="noopener noreferrer">
+        https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
+      </a>
+    </li>
+
+    <li>
+      Circuit Basics. (n.d.). 
+      <em>How to use an ultrasonic sensor with Arduino.</em> 
+      Circuit Basics. 
+      <a href="https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/" target="_blank" rel="noopener noreferrer">
+        https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/
+      </a>
+    </li>
+
+    <li>
+      Last Minute Engineers. (n.d.). 
+      <em>Ultrasonic sensor tutorial.</em> 
+      Last Minute Engineers. 
+      <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank" rel="noopener noreferrer">
+        https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+
+</body>
+
+</html>
