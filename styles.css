@@ -85,7 +85,7 @@ pre {
     /* allows horizontal scrolling */
     overflow-y: auto;
     /* allows vertical scrolling */
-    max-height: 400px;
+    max-height: 500px;
     /* limits height before scrolling */
     font-family: "Courier New", monospace;
     font-size: 0.9rem;
