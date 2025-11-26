@@ -9,13 +9,14 @@ main {
 
 
 :root {
-    color-scheme: light dark;
+    color-scheme: light;
 }
 
 body {
     font-family: system-ui, Arial, sans-serif;
     line-height: 1.6;
-    margin: 24px;
+    margin-left: 25vh;
+    margin-right: 25vh;
     background: #f6f7f9;
     scroll-padding-top: 100px; /* keeps scroll positions correct */
 }
