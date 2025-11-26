@@ -41,7 +41,7 @@
     <h2>Project Information</h2>
     <p><strong>Course:</strong> TECH 117 (Computer Engineering Technology, Fall 2025)</p>
     <p><strong>Instructor:</strong> Ph.D. Ana Rodrigues</p>
-    <p><strong>Group 25 Team Members:</strong></p>
+    <p><strong>Group 25, Team Members:</strong></p>
     <ul>
       <li>Ahkeens Broomes</li>
       <li>Ryan Di Lorenzo</li>
@@ -62,7 +62,7 @@
     <h2>Circuit Diagram</h2>
     <p>The ultrasonic sensor measures distance; the Arduino activates LEDs and the buzzer according to distance
       thresholds.</p>
-    <img src="collision-warning-system-Arduino.jpg" alt="Arduino collision warning system">
+    <img src="Dutch+Traffic+Light+System.png" alt="Dutch Traffic Light System">
   </section>
 
   <section id="environment">
@@ -80,282 +80,77 @@
 
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
- 
-  <table>
-    <thead>
-      <tr>
-        <th colspan="2"># item description</th>
-        <th>QTY</th>
-        <th>specifications</th>
-        <th>O estimated cost (USD)</th>
-        <th>Total Cost</th>
-        <th>supplier / part#</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td>1 DFRduino</td>
-        <td></td>
-        <td>1 5v microcontroller Board, ATmega328P</td>
-        <td>$12.90</td>
-        <td>$12.90</td>
-        <td>DFR0216</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>2 multiplexer</td>
-        <td></td>
-        <td>1 PCA96</td>
-        <td>$2.00</td>
-        <td>$2.00</td>
-        <td>Multiplexer</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>3 5mm LED Red</td>
-        <td></td>
-        <td>12 Optoelectronics/LED Indication - Discrete</td>
-        <td>$0.03</td>
-        <td>$0.39</td>
-        <td>5mm LED Red</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>4 5mm LED yellow</td>
-        <td></td>
-        <td>12 Optoelectronics/LED Indication - Discrete</td>
-        <td>$0.03</td>
-        <td>$0.39</td>
-        <td>5mm LED yellow</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>5 5mm LED Green</td>
-        <td></td>
-        <td>12 Optoelectronics/LED Indication - Discrete</td>
-        <td>$0.03</td>
-        <td>$0.39</td>
-        <td>5mm LED Green</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>6 hot wheels cars</td>
-        <td></td>
-        <td>10 Hot Wheels 10-Pack of Toy Race Cars, Includes 1:6</td>
-        <td></td>
-        <td>$0.00</td>
-        <td>Hot Wheels Originals</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>7 resistors</td>
-        <td></td>
-        <td>40 1206 smd 300 ohm</td>
-        <td></td>
-        <td>$2.00</td>
-        <td>RT1206BRD07300RL</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>8 computer(for programming)</td>
-        <td></td>
-        <td>1 any with arduino ide</td>
-        <td>$0.00</td>
-        <td>$0.00</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>9 40 jumper wire ribbon</td>
-        <td></td>
-        <td>1 male to male</td>
-        <td>$2.95</td>
-        <td>$2.95</td>
-        <td>Male to Male Jumper Cable x 40 (20cm)</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>10 TLC555 timer</td>
-        <td></td>
-        <td>30 2MHz clock generator</td>
-        <td>$0.20</td>
-        <td>$6.10</td>
-        <td>Timers and Oscillators RoHS</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>11 1/2 inch plywood board</td>
-        <td></td>
-        <td>1 24 inch * 48 inch</td>
-        <td>$17.51</td>
-        <td>$17.51</td>
-        <td>Home Depot</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>12 Potentiometers</td>
-        <td></td>
-        <td>12 Potentiometers BOCHEN 3362P-1-103</td>
-        <td>$0.13</td>
-        <td>$1.60</td>
-        <td>Potentiometers</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>13 Fuses</td>
-        <td></td>
-        <td>4 Circuit Protection/Fuses Littelfuse 0435003.KRHF</td>
-        <td>$0.64</td>
-        <td>$2.56</td>
-        <td>0435003.KRHF | Littelfuse | Price | In Stock | LCSC Electronics</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>14 620 Resistors</td>
-        <td></td>
-        <td>20 Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.09</td>
-        <td>620 Resistors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>15 USB Connector</td>
-        <td></td>
-        <td>4 USB type c connectors</td>
-        <td>$0.20</td>
-        <td>$0.78</td>
-        <td>USB Connector</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>16 5.1kQ Resistors</td>
-        <td></td>
-        <td>8 Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.00</td>
-        <td>5.1kQ Resistors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>17 49.9kQ Resistors</td>
-        <td></td>
-        <td>20 Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.01</td>
-        <td>49.9kQ Resistors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>18 00 Resistors</td>
-        <td></td>
-        <td>20 Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.08</td>
-        <td>00 Resistors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>19 10uF Capacitors</td>
-        <td></td>
-        <td>50 Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.01</td>
-        <td>$0.31</td>
-        <td>10uF Capacitors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>20 1nF Capacitors</td>
-        <td></td>
-        <td>50 Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.00</td>
-        <td>$0.06</td>
-        <td>1nF Capacitors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>21 10uF Capacitors</td>
-        <td></td>
-        <td>50 Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.00</td>
-        <td>$0.09</td>
-        <td>10uF Capacitors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>22 Receptacles, Female Sockets</td>
-        <td></td>
-        <td>50 Connectors, Interconnects/Rectangular Connectors</td>
-        <td>$0.05</td>
-        <td>$2.43</td>
-        <td>Receptacles, Female Sockets</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>23 Receptacles, Female Sockets</td>
-        <td></td>
-        <td>50 Connectors, Interconnects/Rectangular Connectors</td>
-        <td>$0.07</td>
-        <td>$3.62</td>
-        <td>Receptacles, Female Sockets</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>24 3.3nF Capacitors</td>
-        <td></td>
-        <td>20 Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.00</td>
-        <td>$0.02</td>
-        <td>3.3nF Capacitors</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>25 TLV76133DCY</td>
-        <td></td>
-        <td>4 Integrated Circuits (ICs)/Power Management (PMI(</td>
-        <td>$0.22</td>
-        <td>$0.89</td>
-        <td>6QUA Low Drop Out (LDO) Regulators</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>26 A03415</td>
-        <td></td>
-        <td>4 Discrete Semiconductors/FETs, MOSFETs/Single F</td>
-        <td>$0.01</td>
-        <td>$0.06</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>27 3.3nF Capacitors</td>
-        <td></td>
-        <td>20 Passives/Capacitors/Ceramic</td>
-        <td>$0.00</td>
-        <td>$0.04</td>
-        <td>3.3nF Capacitors</td>
-      </tr>
-      <tr>
-        <td colspan="2">28 5100 Resistor</td>
-        <td></td>
-        <td>20 Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.04</td>
-        <td>5100 Resistor</td>
-      </tr>
-      <tr>
-        <td colspan="2">Total Cost</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>$55.31</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Unit Price (CAD)</th>
+          <th>Subtotal (CAD)</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Arduino Uno Rev3</td>
+          <td>1</td>
+          <td>$27.60</td>
+          <td>$27.60</td>
+          <td><a href="https://store-usa.arduino.cc/products/arduino-uno-rev3">Arduino Store</a></td>
+        </tr>
+        <tr>
+          <td>HC-SR04 Ultrasonic Sensor</td>
+          <td>1</td>
+          <td>$3.95</td>
+          <td>$3.95</td>
+          <td><a href="https://www.adafruit.com/product/3942">Adafruit</a></td>
+        </tr>
+        <tr>
+          <td>Passive Buzzer</td>
+          <td>1</td>
+          <td>$0.95</td>
+          <td>$0.95</td>
+          <td><a href="https://www.sparkfun.com/passive-buzzer-module.html">SparkFun</a></td>
+        </tr>
+        <tr>
+          <td>LEDs (Red, Yellow, Green)</td>
+          <td>3</td>
+          <td>$0.20</td>
+          <td>$0.60</td>
+          <td>Adafruit</td>
+        </tr>
+        <tr>
+          <td>220 Ω Resistors</td>
+          <td>3</td>
+          <td>$0.03</td>
+          <td>$0.09</td>
+          <td>Adafruit</td>
+        </tr>
+        <tr>
+          <td>Breadboard</td>
+          <td>1</td>
+          <td>$4.95</td>
+          <td>$4.95</td>
+          <td><a href="https://www.adafruit.com/product/64">Adafruit</a></td>
+        </tr>
+        <tr>
+          <td>Jumper Wires</td>
+          <td>1 set</td>
+          <td>$3.50</td>
+          <td>$3.50</td>
+          <td><a href="https://www.sparkfun.com/jumper-wires-standard-7-m-m-30-awg-30-pack.html">SparkFun</a>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Estimated Total</td>
+          <td>$41.64</td>
+          <td>—</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
 
   <section id="prototype">
     <h2>Prototype</h2>
