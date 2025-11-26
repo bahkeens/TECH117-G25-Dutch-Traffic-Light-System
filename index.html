@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dutch Traffic Light System</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/traffic-light-favicon.png">
 
   <!-- Prism.js syntax highlighting -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
@@ -19,7 +20,7 @@
 <body>
   <!-- Fixed Navigation Menu -->
   <nav id="menu">
-    <h3>Menu</h3>
+    <h3>Intelligent Traffic Light</h3>
     <ul>
       <li><a href="#top">Title</a></li>
       <li><a href="#information">Project Information</a></li>
@@ -85,279 +86,54 @@
   <title>Foundational Project Traffic Light BOM - Sheet1</title>
 </head>
 <body>
-  <table border="1" cellspacing="0" cellpadding="5">
-    <thead>
-      <tr>
-        <th>Item</th>
-        <th>Descriotion</th>
-        <th>QTY</th>
-        <th>Specifications</th>
-        <th>Esttimated Cost</th>
-        <th>Total Cost</th>
-        <th>Supplier/ Part#</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>DFRduino</td>
-        <td>1</td>
-        <td>5v microcontroller Board, ATmega328P</td>
-        <td>$12.90</td>
-        <td>$12.90</td>
-        <td><a href="https://www.dfrobot.com/product-216.html">DFR0216</a></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>multiplexer</td>
-        <td>1</td>
-        <td>PCA96</td>
-        <td>$2.00</td>
-        <td>$2.00</td>
-        <td>Multiplexer</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>5mm LED Red</td>
-        <td>12</td>
-        <td>Optoelectronics/LED Indication - Discrete</td>
-        <td>$0.03</td>
-        <td>$0.39</td>
-        <td>5mm LED Red</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5mm LED yellow</td>
-        <td>12</td>
-        <td>Optoelectronics/LED Indication - Discrete</td>
-        <td>$0.03</td>
-        <td>$0.39</td>
-        <td>5mm LED yellow</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>5mm LED Green</td>
-        <td>12</td>
-        <td>Optoelectronics/LED Indication - Discrete</td>
-        <td>$0.03</td>
-        <td>$0.39</td>
-        <td>5mm LED Green</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>hot wheels cars</td>
-        <td>10</td>
-        <td>Hot Wheels 10-Pack of Toy Race Cars, Includes 1:6</td>
-        <td></td>
-        <td>$0.00</td>
-        <td><a href="https://shop.mattel.com/pages/hot-wheels">Hot Wheels Originals</a></td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>resistors</td>
-        <td>40</td>
-        <td>1206 smd 300 ohm</td>
-        <td></td>
-        <td>$2.00</td>
-        <td>RT1206BRD07300RL</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>computer (for programming)</td>
-        <td>1</td>
-        <td>any with arduino ide</td>
-        <td>$0.00</td>
-        <td>$0.00</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>40 jumper wire ribbon</td>
-        <td>1</td>
-        <td>male to male</td>
-        <td>$2.95</td>
-        <td>$2.95</td>
-        <td><a href="https://www.adafruit.com/product/1956">Male to Male Jumper Cable x 40 (20cm)</a></td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>TLC555 timer</td>
-        <td>30</td>
-        <td>2MHz clock generator</td>
-        <td>$0.20</td>
-        <td>$6.10</td>
-        <td><a href="https://www.ti.com/product/TLC555">Timers and Oscillators RoHS</a></td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>1/2 inch plywood board</td>
-        <td>1</td>
-        <td>24 inch * 48 inch</td>
-        <td>$17.51</td>
-        <td>$17.51</td>
-        <td><a href="https://www.homedepot.com/">Home Depot</a></td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>Potentiometers</td>
-        <td>12</td>
-        <td>BOCHEN 3362P-1-103</td>
-        <td>$0.13</td>
-        <td>$1.60</td>
-        <td>Potentiometers</td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>Fuses</td>
-        <td>4</td>
-        <td>Circuit Protection/Fuses Littelfuse 0435003.KRHF</td>
-        <td>$0.64</td>
-        <td>$2.56</td>
-        <td><a href="https://www.littelfuse.com/products/fuses.aspx">0435003.KRHF | Littelfuse</a></td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>620 Resistors</td>
-        <td>20</td>
-        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.09</td>
-        <td>620 Resistors</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>USB Connector</td>
-        <td>4</td>
-        <td>USB type c connectors</td>
-        <td>$0.20</td>
-        <td>$0.78</td>
-        <td>USB Connector</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>5.1kQ Resistors</td>
-        <td>8</td>
-        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.00</td>
-        <td>5.1kQ Resistors</td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>49.9kQ Resistors</td>
-        <td>20</td>
-        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.01</td>
-        <td>49.9kQ Resistors</td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td>00 Resistors</td>
-        <td>20</td>
-        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.08</td>
-        <td>00 Resistors</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>10uF Capacitors</td>
-        <td>50</td>
-        <td>Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.01</td>
-        <td>$0.31</td>
-        <td>10uF Capacitors</td>
-      </tr>
-      <tr>
-        <td>20</td>
-        <td>1nF Capacitors</td>
-        <td>50</td>
-        <td>Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.00</td>
-        <td>$0.06</td>
-        <td>1nF Capacitors</td>
-      </tr>
-      <tr>
-        <td>21</td>
-        <td>10uF Capacitors</td>
-        <td>50</td>
-        <td>Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.00</td>
-        <td>$0.09</td>
-        <td>10uF Capacitors</td>
-      </tr>
-      <tr>
-        <td>22</td>
-        <td>Receptacles, Female Sockets</td>
-        <td>50</td>
-        <td>Connectors, Interconnects/Rectangular Connectors</td>
-        <td>$0.05</td>
-        <td>$2.43</td>
-        <td>Receptacles, Female Sockets</td>
-      </tr>
-      <tr>
-        <td>23</td>
-        <td>Receptacles, Female Sockets</td>
-        <td>50</td>
-        <td>Connectors, Interconnects/Rectangular Connectors</td>
-        <td>$0.07</td>
-        <td>$3.62</td>
-        <td>Receptacles, Female Sockets</td>
-      </tr>
-      <tr>
-        <td>24</td>
-        <td>3.3nF Capacitors</td>
-        <td>20</td>
-        <td>Passives/Capacitors/Ceramic Capacitors</td>
-        <td>$0.00</td>
-        <td>$0.02</td>
-        <td>3.3nF Capacitors</td>
-      </tr>
-      <tr>
-        <td>25</td>
-        <td>TLV76133DCY</td>
-        <td>4</td>
-        <td>Integrated Circuits (ICs)/Power Management (PMIC)</td>
-        <td>$0.22</td>
-        <td>$0.89</td>
-        <td>6QUA Low Drop Out (LDO) Regulators</td>
-      </tr>
-      <tr>
-        <td>26</td>
-        <td>A03415</td>
-        <td>4</td>
-        <td>Discrete Semiconductors/FETs, MOSFETs/Single</td>
-        <td>$0.01</td>
-        <td>$0.06</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>27</td>
-        <td>3.3nF Capacitors</td>
-        <td>20</td>
-        <td>Passives/Capacitors/Ceramic</td>
-        <td>$0.00</td>
-        <td>$0.04</td>
-        <td>3.3nF Capacitors</td>
-      </tr>
-      <tr>
-        <td>28</td>
-        <td>5100 Resistor</td>
-        <td>20</td>
-        <td>Passives/Resistors/Chip Resistor - Surface Mount</td>
-        <td>$0.00</td>
-        <td>$0.04</td>
-        <td>5100 Resistor</td>
-      </tr>
-      <tr>
-        <td colspan="4">Total Cost</td>
-        <td></td>
-        <td>$55.31</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+<table border="1" cellspacing="0" cellpadding="6" id="bom-table">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Qty</th>
+      <th>Specifications</th>
+      <th>Estimated Unit Cost</th>
+      <th>Total Cost</th>
+      <th>Supplier / Part #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>DFRduino</td><td>1</td><td>5V Microcontroller Board, ATmega328P</td><td>$12.90</td><td>$12.90</td><td><a href="https://www.dfrobot.com/product-216.html">DFR0216</a></td></tr>
+    <tr><td>2</td><td>Multiplexer</td><td>1</td><td>PCA96</td><td>$2.00</td><td>$2.00</td><td>PCA96 Multiplexer</td></tr>
+    <tr><td>3</td><td>5mm LED – Red</td><td>12</td><td>Discrete Indicator LED</td><td>$0.03</td><td>$0.39</td><td>Standard 5mm Red LED</td></tr>
+    <tr><td>4</td><td>5mm LED – Yellow</td><td>12</td><td>Discrete Indicator LED</td><td>$0.03</td><td>$0.39</td><td>Standard 5mm Yellow LED</td></tr>
+    <tr><td>5</td><td>5mm LED – Green</td><td>12</td><td>Discrete Indicator LED</td><td>$0.03</td><td>$0.39</td><td>Standard 5mm Green LED</td></tr>
+    <tr><td>6</td><td>Hot Wheels cars</td><td>10</td><td>1:64 scale toy cars</td><td>$0.00</td><td>$0.00</td><td><a href="https://shop.mattel.com/pages/hot-wheels">Hot Wheels Originals</a></td></tr>
+    <tr><td>7</td><td>Resistors</td><td>40</td><td>1206 SMD, 300 Ω</td><td>$0.05</td><td>$2.00</td><td>RT1206BRD07300RL</td></tr>
+    <tr><td>8</td><td>Computer (programming)</td><td>1</td><td>Any PC with Arduino IDE</td><td>$0.00</td><td>$0.00</td><td>—</td></tr>
+    <tr><td>9</td><td>Jumper wires</td><td>1</td><td>40 × male-to-male ribbon, 20 cm</td><td>$2.95</td><td>$2.95</td><td><a href="https://www.adafruit.com/product/1956">Adafruit #1956</a></td></tr>
+    <tr><td>10</td><td>TLC555 Timer</td><td>30</td><td>2 MHz clock generator</td><td>$0.20</td><td>$6.10</td><td><a href="https://www.ti.com/product/TLC555">Texas Instruments TLC555</a></td></tr>
+    <tr><td>11</td><td>Plywood board</td><td>1</td><td>½″, 24 × 48 inch</td><td>$17.51</td><td>$17.51</td><td>Home Depot</td></tr>
+    <tr><td>12</td><td>Potentiometers</td><td>12</td><td>BOCHEN 3362P-1-103</td><td>$0.13</td><td>$1.60</td><td>3362P-1-103</td></tr>
+    <tr><td>13</td><td>Fuses</td><td>4</td><td>Littelfuse 0435003.KRHF</td><td>$0.64</td><td>$2.56</td><td><a href="https://www.littelfuse.com/products/fuses.aspx">0435003.KRHF</a></td></tr>
+    <tr><td>14</td><td>620 Ω Resistors</td><td>20</td><td>1206 SMD</td><td>$0.00</td><td>$0.09</td><td>620 Ω</td></tr>
+    <tr><td>15</td><td>USB-C Connectors</td><td>4</td><td>USB Type-C</td><td>$0.20</td><td>$0.78</td><td>USB-C connector</td></tr>
+    <tr><td>16</td><td>5.1 kΩ Resistors</td><td>8</td><td>1206 SMD</td><td>$0.00</td><td>$0.00</td><td>5.1 kΩ</td></tr>
+    <tr><td>17</td><td>49.9 kΩ Resistors</td><td>20</td><td>1206 SMD</td><td>$0.00</td><td>$0.01</td><td>49.9 kΩ</td></tr>
+    <tr><td>18</td><td>0 Ω Resistors</td><td>20</td><td>1206 SMD jumpers</td><td>$0.00</td><td>$0.08</td><td>0 Ω</td></tr>
+    <tr><td>19</td><td>10 µF Capacitors</td><td>50</td><td>Ceramic capacitors</td><td>$0.01</td><td>$0.31</td><td>10 µF</td></tr>
+    <tr><td>20</td><td>1 nF Capacitors</td><td>50</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.06</td><td>1 nF</td></tr>
+    <tr><td>21</td><td>10 nF Capacitors</td><td>50</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.09</td><td>10 nF</td></tr>
+    <tr><td>22</td><td>Female receptacle sockets</td><td>50</td><td>Rectangular connectors</td><td>$0.05</td><td>$2.43</td><td>Receptacle sockets</td></tr>
+    <tr><td>23</td><td>Female receptacle sockets</td><td>50</td><td>Rectangular connectors</td><td>$0.07</td><td>$3.62</td><td>Receptacle sockets</td></tr>
+    <tr><td>24</td><td>3.3 nF Capacitors</td><td>20</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.02</td><td>3.3 nF</td></tr>
+    <tr><td>25</td><td>TLV76133DCY (LDO)</td><td>4</td><td>PMIC – 3.3 V LDO regulator</td><td>$0.22</td><td>$0.89</td><td>TLV76133DCY</td></tr>
+    <tr><td>26</td><td>A03415 MOSFET</td><td>4</td><td>Single MOSFET</td><td>$0.01</td><td>$0.06</td><td>A03415</td></tr>
+    <tr><td>27</td><td>3.3 nF Capacitors</td><td>20</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.04</td><td>3.3 nF</td></tr>
+    <tr><td>28</td><td>510 Ω Resistors</td><td>20</td><td>1206 SMD</td><td>$0.00</td><td>$0.04</td><td>510 Ω</td></tr>
+    <tr>
+      <td colspan="5" style="text-align:right; font-weight:bold;">Total Cost</td>
+      <td style="font-weight:bold;">$55.31</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 </body>
 
 
