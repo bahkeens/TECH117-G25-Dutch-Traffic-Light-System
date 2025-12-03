@@ -133,8 +133,77 @@
 
   <section id="prototype">
     <h2>Prototype</h2>
-    <p>The following image shows the assembled prototype on a breadboard.</p>
-    <img src="Images/Coming Soon.jpg" alt="Coming Soon">
+<p>The following image shows the assembled prototype on a breadboard.</p>
+
+<!-- Photo Slider Start -->
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="Images\Coming Soon.jpg">
+    <img src="Images\DigitalPtype.png">
+    <img src="Images\Prototype .JPEG">
+  </div>
+
+  <div class="arrow left" onclick="move(-1)">❮</div>
+  <div class="arrow right" onclick="move(1)">❯</div>
+</div>
+
+<style>
+  .slider {
+    width: 100%;
+    max-width: 1800px;
+    aspect-ratio: 2/1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 3s ease;
+    height: 100%;
+  }
+
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .left { left: 10px; }
+  .right { right: 10px; }
+</style>
+
+<script>
+  let index = 0;
+
+  function move(direction) {
+    const slides = document.getElementById('slides');
+    const total = slides.children.length;
+
+    index += direction;
+    if (index < 0) index = total - 1;
+    if (index >= total) index = 0;
+
+    slides.style.transform = `translateX(-${index * 600}px)`;
+  }
+
+  // Auto slide every 4 seconds
+  setInterval(() => move(1), 4000);
+</script>
+<!-- Photo Slider End -->
+
   </section>
 
   <section id="code">
