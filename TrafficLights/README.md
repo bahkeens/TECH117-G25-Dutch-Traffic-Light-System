@@ -1,0 +1,3 @@
+# Intelligent Traffic Light
+
+Traffic lights are thought to be fast and accurate, but what if I told you they are largely inefficient? This project will incorporate traffic technology found in European and more specifically, Dutch traffic lights to optimize and accelerate human commute. We'll incorporate a wide range of emerging technologies to accomplish this such as induction loops, radars and cameras.
