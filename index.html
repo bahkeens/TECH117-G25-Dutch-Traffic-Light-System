@@ -138,16 +138,17 @@
 <!-- Photo Slider Start -->
 <div class="slider">
   <div class="slides" id="slides">
-    <img src="Images\Coming Soon.jpg">
     <img src="Images\DigitalPtype.png">
     <img src="Images\Prototype .JPEG">
+    <img src="Images\Still working.JPEG">
+    <img src="Images\Final.JPEG">
   </div>
 
   <div class="arrow left" onclick="move(-1)">❮</div>
   <div class="arrow right" onclick="move(1)">❯</div>
 </div>
 
-<style>
+<style> 
   .slider {
     width: 100%;
     max-width: 1800px;
@@ -206,32 +207,32 @@
 
   </section>
 
-  <section id="code">
-    <h2>Arduino Code</h2>
-    <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on HC-SR04 distance readings.</p>
+ <section id="code">
+  <h2>Arduino Code</h2>
+  <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on HC-SR04 distance readings.</p>
 
-    <button class="copy-btn" onclick="copyCode()">Copy</button>
-    <pre class="line-numbers">
-      <code id="arduinoCode" class="language-cpp">Loading...</code>
-    </pre>
-  </section>
+  <button class="copy-btn" onclick="copyCode()">Copy</button>
+  <pre class="line-numbers">
+    <code id="arduinoCode" class="language-cpp">Loading...</code>
+  </pre>
+</section>
 
-    <script>
-    // Load code from external file
-    fetch("src/ardunio.ino")
-      .then(response => response.text())
-      .then(text => {
-        const codeElement = document.getElementById("arduinoCode");
-        codeElement.textContent = text;
-        Prism.highlightElement(codeElement);
-      });
+<script>
+  // Load code from external file
+  fetch("Code/dutch_traffic_light_code.ino")
+    .then(response => response.text())
+    .then(text => {
+      const codeElement = document.getElementById("arduinoCode");
+      codeElement.textContent = text;
+      Prism.highlightElement(codeElement);
+    });
 
-    // Copy-to-clipboard button
-    function copyCode() {
-      const code = document.getElementById("arduinoCode").textContent;
-      navigator.clipboard.writeText(code);
-    }
-  </script>
+  // Copy-to-clipboard button
+  function copyCode() {
+    const code = document.getElementById("arduinoCode").textContent;
+    navigator.clipboard.writeText(code);
+  }
+</script>
 
 
   <section id="conclusion">
@@ -307,5 +308,3 @@
 
 
 </body>
-
-</html>
