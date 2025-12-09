@@ -17,25 +17,23 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <!-- Fixed Navigation Menu -->
-  <nav id="menu">
-    <h3>Intelligent Traffic Light</h3>
-    <ul>
-      <li><a href="#top">Title</a></li>
-      <li><a href="#information">Project Information</a></li>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#circuit-diagram">Circuit</a></li>
-      <li><a href="#environment">Environment</a></li>
-      <li><a href="#bom">BoM</a></li>
-      <li><a href="#prototype">Prototype</a></li>
-      <li><a href="#code">Code</a></li>
-      <li><a href="#conclusion">Conclusion</a></li>
-      <li><a href="#references">References</a></li>
-    </ul>
-  </nav>
+<nav id="menu">
+  <h3>Intelligent Traffic Light</h3>
+  <ul>
+    <li><a href="#top">Title</a></li>
+    <li><a href="#information">Project Information</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#circuit-diagram">Circuit</a></li>
+    <li><a href="#environment">Environment</a></li>
+    <li><a href="#bom">BoM</a></li>
+    <li><a href="#prototype">Prototype</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
 
-
+<main>
   <h1 id="top">Intelligent Traffic Light</h1>
 
   <section id="information">
@@ -53,186 +51,422 @@
 
   <section id="introduction">
     <h2>Introduction</h2>
-   <p>Modern traffic signals often operate on outdated timing plans that fail to adapt to real traffic conditions.
-  This project applies <strong>Dutch-style intelligent control</strong> using <strong>induction loops</strong>,
-  <strong>radar sensors</strong>, and <strong>camera-based detection</strong> to optimize traffic flow in real time.
-  The result is <strong>safer intersections</strong>, <strong>shorter wait times</strong>, and a
-  <strong>more efficient commute</strong>.</p>
+    <p>Modern traffic signals often operate on outdated timing plans that fail to adapt to real traffic conditions.
+      This project applies <strong>Dutch-style intelligent control</strong> using <strong>induction loops</strong>,
+      <strong>radar sensors</strong>, and <strong>camera-based detection</strong> to optimize traffic flow in real time.
+      The result is <strong>safer intersections</strong>, <strong>shorter wait times</strong>, and a
+      <strong>more efficient commute</strong>.
+    </p>
   </section>
 
   <section id="circuit-diagram">
     <h2>Circuit Diagram</h2>
     <p>
-  This is a <strong>multi-breadboard Arduino Uno</strong> circuit designed to control a large number of
-  <strong>LEDs</strong> using <strong>shift registers</strong>. It’s a classic example of expanding digital
-  output capabilities with limited Arduino pins.</p>
-  <img src="Images/Circuit Simulation.png" alt="Dutch Traffic Light System">
+      This is a <strong>multi-breadboard Arduino Uno</strong> circuit designed to control a large number of
+      <strong>LEDs</strong> using <strong>shift registers</strong>. It’s a classic example of expanding digital
+      output capabilities with limited Arduino pins.
+    </p>
+    <img src="Images/Circuit Simulation.png" alt="Dutch Traffic Light System">
   </section>
 
   <section id="environment">
-   <h2>Environmental Impact Assessment</h2>
-<ul>
-  <li><strong>Materials:</strong> All electronic components are RoHS and WEEE compliant, minimizing hazardous substances.</li>
-  <li><strong>Energy Efficiency:</strong> The traffic-light circuit draws minimal power (~50 mA at 5V), suitable for USB or low-voltage power sources.</li>
-  <li><strong>Reusability:</strong> LEDs, sensors, and other modules are fully modular and reusable, reducing electronic waste.</li>
-  <li><strong>Packaging & Shipping:</strong> Sourcing all components from a single supplier helps lower the overall carbon footprint.</li>
-</ul>
+    <h2>Environmental Impact Assessment</h2>
+    <ul>
+      <li><strong>Materials:</strong> All electronic components are RoHS and WEEE compliant, minimizing hazardous
+        substances.</li>
+      <li><strong>Energy Efficiency:</strong> The traffic-light circuit draws minimal power (~50 mA at 5V), suitable for
+        USB or low-voltage power sources.</li>
+      <li><strong>Reusability:</strong> LEDs, sensors, and other modules are fully modular and reusable, reducing
+        electronic waste.</li>
+      <li><strong>Packaging & Shipping:</strong> Sourcing all components from a single supplier helps lower the overall
+        carbon footprint.</li>
+    </ul>
   </section>
 
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
     <table border="1" cellspacing="0" cellpadding="6" id="bom-table">
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th>Description</th>
-      <th>Qty</th>
-      <th>Specifications</th>
-      <th>Estimated Unit Cost</th>
-      <th>Total Cost</th>
-      <th>Supplier / Part #</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>DFRduino</td><td>1</td><td>5V Microcontroller Board, ATmega328P</td><td>$12.90</td><td>$12.90</td><td><a href="https://www.dfrobot.com/product-216.html">DFR0216</a></td></tr>
-    <tr><td>2</td><td>Multiplexer</td><td>1</td><td>PCA96</td><td>$2.00</td><td>$2.00</td><td>PCA96 Multiplexer</td></tr>
-    <tr><td>3</td><td>5mm LED – Red</td><td>12</td><td>Discrete Indicator LED</td><td>$0.03</td><td>$0.39</td><td>Standard 5mm Red LED</td></tr>
-    <tr><td>4</td><td>5mm LED – Yellow</td><td>12</td><td>Discrete Indicator LED</td><td>$0.03</td><td>$0.39</td><td>Standard 5mm Yellow LED</td></tr>
-    <tr><td>5</td><td>5mm LED – Green</td><td>12</td><td>Discrete Indicator LED</td><td>$0.03</td><td>$0.39</td><td>Standard 5mm Green LED</td></tr>
-    <tr><td>6</td><td>Hot Wheels cars</td><td>10</td><td>1:64 scale toy cars</td><td>$0.00</td><td>$0.00</td><td><a href="https://shop.mattel.com/pages/hot-wheels">Hot Wheels Originals</a></td></tr>
-    <tr><td>7</td><td>Resistors</td><td>40</td><td>1206 SMD, 300 Ω</td><td>$0.05</td><td>$2.00</td><td>RT1206BRD07300RL</td></tr>
-    <tr><td>8</td><td>Computer (programming)</td><td>1</td><td>Any PC with Arduino IDE</td><td>$0.00</td><td>$0.00</td><td>—</td></tr>
-    <tr><td>9</td><td>Jumper wires</td><td>1</td><td>40 × male-to-male ribbon, 20 cm</td><td>$2.95</td><td>$2.95</td><td><a href="https://www.adafruit.com/product/1956">Adafruit #1956</a></td></tr>
-    <tr><td>10</td><td>TLC555 Timer</td><td>30</td><td>2 MHz clock generator</td><td>$0.20</td><td>$6.10</td><td><a href="https://www.ti.com/product/TLC555">Texas Instruments TLC555</a></td></tr>
-    <tr><td>11</td><td>Plywood board</td><td>1</td><td>½″, 24 × 48 inch</td><td>$17.51</td><td>$17.51</td><td>Home Depot</td></tr>
-    <tr><td>12</td><td>Potentiometers</td><td>12</td><td>BOCHEN 3362P-1-103</td><td>$0.13</td><td>$1.60</td><td>3362P-1-103</td></tr>
-    <tr><td>13</td><td>Fuses</td><td>4</td><td>Littelfuse 0435003.KRHF</td><td>$0.64</td><td>$2.56</td><td><a href="https://www.littelfuse.com/products/fuses.aspx">0435003.KRHF</a></td></tr>
-    <tr><td>14</td><td>620 Ω Resistors</td><td>20</td><td>1206 SMD</td><td>$0.00</td><td>$0.09</td><td>620 Ω</td></tr>
-    <tr><td>15</td><td>USB-C Connectors</td><td>4</td><td>USB Type-C</td><td>$0.20</td><td>$0.78</td><td>USB-C connector</td></tr>
-    <tr><td>16</td><td>5.1 kΩ Resistors</td><td>8</td><td>1206 SMD</td><td>$0.00</td><td>$0.00</td><td>5.1 kΩ</td></tr>
-    <tr><td>17</td><td>49.9 kΩ Resistors</td><td>20</td><td>1206 SMD</td><td>$0.00</td><td>$0.01</td><td>49.9 kΩ</td></tr>
-    <tr><td>18</td><td>0 Ω Resistors</td><td>20</td><td>1206 SMD jumpers</td><td>$0.00</td><td>$0.08</td><td>0 Ω</td></tr>
-    <tr><td>19</td><td>10 µF Capacitors</td><td>50</td><td>Ceramic capacitors</td><td>$0.01</td><td>$0.31</td><td>10 µF</td></tr>
-    <tr><td>20</td><td>1 nF Capacitors</td><td>50</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.06</td><td>1 nF</td></tr>
-    <tr><td>21</td><td>10 nF Capacitors</td><td>50</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.09</td><td>10 nF</td></tr>
-    <tr><td>22</td><td>Female receptacle sockets</td><td>50</td><td>Rectangular connectors</td><td>$0.05</td><td>$2.43</td><td>Receptacle sockets</td></tr>
-    <tr><td>23</td><td>Female receptacle sockets</td><td>50</td><td>Rectangular connectors</td><td>$0.07</td><td>$3.62</td><td>Receptacle sockets</td></tr>
-    <tr><td>24</td><td>3.3 nF Capacitors</td><td>20</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.02</td><td>3.3 nF</td></tr>
-    <tr><td>25</td><td>TLV76133DCY (LDO)</td><td>4</td><td>PMIC – 3.3 V LDO regulator</td><td>$0.22</td><td>$0.89</td><td>TLV76133DCY</td></tr>
-    <tr><td>26</td><td>A03415 MOSFET</td><td>4</td><td>Single MOSFET</td><td>$0.01</td><td>$0.06</td><td>A03415</td></tr>
-    <tr><td>27</td><td>3.3 nF Capacitors</td><td>20</td><td>Ceramic capacitors</td><td>$0.00</td><td>$0.04</td><td>3.3 nF</td></tr>
-    <tr><td>28</td><td>510 Ω Resistors</td><td>20</td><td>1206 SMD</td><td>$0.00</td><td>$0.04</td><td>510 Ω</td></tr>
-    <tr>
-      <td colspan="5" style="text-align:right; font-weight:bold;">Total Cost</td>
-      <td style="font-weight:bold;">$55.31</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Specifications</th>
+          <th>Estimated Unit Cost</th>
+          <th>Total Cost</th>
+          <th>Supplier / Part #</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>DFRduino</td>
+          <td>1</td>
+          <td>5V Microcontroller Board, ATmega328P</td>
+          <td>$12.90</td>
+          <td>$12.90</td>
+          <td><a href="https://www.dfrobot.com/product-216.html">DFR0216</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Multiplexer</td>
+          <td>1</td>
+          <td>PCA96</td>
+          <td>$2.00</td>
+          <td>$2.00</td>
+          <td>PCA96 Multiplexer</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>5mm LED – Red</td>
+          <td>12</td>
+          <td>Discrete Indicator LED</td>
+          <td>$0.03</td>
+          <td>$0.39</td>
+          <td>Standard 5mm Red LED</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5mm LED – Yellow</td>
+          <td>12</td>
+          <td>Discrete Indicator LED</td>
+          <td>$0.03</td>
+          <td>$0.39</td>
+          <td>Standard 5mm Yellow LED</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>5mm LED – Green</td>
+          <td>12</td>
+          <td>Discrete Indicator LED</td>
+          <td>$0.03</td>
+          <td>$0.39</td>
+          <td>Standard 5mm Green LED</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Hot Wheels cars</td>
+          <td>10</td>
+          <td>1:64 scale toy cars</td>
+          <td>$0.00</td>
+          <td>$0.00</td>
+          <td><a href="https://shop.mattel.com/pages/hot-wheels">Hot Wheels Originals</a></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Resistors</td>
+          <td>40</td>
+          <td>1206 SMD, 300 Ω</td>
+          <td>$0.05</td>
+          <td>$2.00</td>
+          <td>RT1206BRD07300RL</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Computer (programming)</td>
+          <td>1</td>
+          <td>Any PC with Arduino IDE</td>
+          <td>$0.00</td>
+          <td>$0.00</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Jumper wires</td>
+          <td>1</td>
+          <td>40 × male-to-male ribbon, 20 cm</td>
+          <td>$2.95</td>
+          <td>$2.95</td>
+          <td><a href="https://www.adafruit.com/product/1956">Adafruit #1956</a></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>TLC555 Timer</td>
+          <td>30</td>
+          <td>2 MHz clock generator</td>
+          <td>$0.20</td>
+          <td>$6.10</td>
+          <td><a href="https://www.ti.com/product/TLC555">Texas Instruments TLC555</a></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Plywood board</td>
+          <td>1</td>
+          <td>½″, 24 × 48 inch</td>
+          <td>$17.51</td>
+          <td>$17.51</td>
+          <td>Home Depot</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Potentiometers</td>
+          <td>12</td>
+          <td>BOCHEN 3362P-1-103</td>
+          <td>$0.13</td>
+          <td>$1.60</td>
+          <td>3362P-1-103</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Fuses</td>
+          <td>4</td>
+          <td>Littelfuse 0435003.KRHF</td>
+          <td>$0.64</td>
+          <td>$2.56</td>
+          <td><a href="https://www.littelfuse.com/products/fuses.aspx">0435003.KRHF</a></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>620 Ω Resistors</td>
+          <td>20</td>
+          <td>1206 SMD</td>
+          <td>$0.00</td>
+          <td>$0.09</td>
+          <td>620 Ω</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>USB-C Connectors</td>
+          <td>4</td>
+          <td>USB Type-C</td>
+          <td>$0.20</td>
+          <td>$0.78</td>
+          <td>USB-C connector</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>5.1 kΩ Resistors</td>
+          <td>8</td>
+          <td>1206 SMD</td>
+          <td>$0.00</td>
+          <td>$0.00</td>
+          <td>5.1 kΩ</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>49.9 kΩ Resistors</td>
+          <td>20</td>
+          <td>1206 SMD</td>
+          <td>$0.00</td>
+          <td>$0.01</td>
+          <td>49.9 kΩ</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>0 Ω Resistors</td>
+          <td>20</td>
+          <td>1206 SMD jumpers</td>
+          <td>$0.00</td>
+          <td>$0.08</td>
+          <td>0 Ω</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>10 µF Capacitors</td>
+          <td>50</td>
+          <td>Ceramic capacitors</td>
+          <td>$0.01</td>
+          <td>$0.31</td>
+          <td>10 µF</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>1 nF Capacitors</td>
+          <td>50</td>
+          <td>Ceramic capacitors</td>
+          <td>$0.00</td>
+          <td>$0.06</td>
+          <td>1 nF</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>10 nF Capacitors</td>
+          <td>50</td>
+          <td>Ceramic capacitors</td>
+          <td>$0.00</td>
+          <td>$0.09</td>
+          <td>10 nF</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Female receptacle sockets</td>
+          <td>50</td>
+          <td>Rectangular connectors</td>
+          <td>$0.05</td>
+          <td>$2.43</td>
+          <td>Receptacle sockets</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Female receptacle sockets</td>
+          <td>50</td>
+          <td>Rectangular connectors</td>
+          <td>$0.07</td>
+          <td>$3.62</td>
+          <td>Receptacle sockets</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>3.3 nF Capacitors</td>
+          <td>20</td>
+          <td>Ceramic capacitors</td>
+          <td>$0.00</td>
+          <td>$0.02</td>
+          <td>3.3 nF</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>TLV76133DCY (LDO)</td>
+          <td>4</td>
+          <td>PMIC – 3.3 V LDO regulator</td>
+          <td>$0.22</td>
+          <td>$0.89</td>
+          <td>TLV76133DCY</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>A03415 MOSFET</td>
+          <td>4</td>
+          <td>Single MOSFET</td>
+          <td>$0.01</td>
+          <td>$0.06</td>
+          <td>A03415</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>3.3 nF Capacitors</td>
+          <td>20</td>
+          <td>Ceramic capacitors</td>
+          <td>$0.00</td>
+          <td>$0.04</td>
+          <td>3.3 nF</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>510 Ω Resistors</td>
+          <td>20</td>
+          <td>1206 SMD</td>
+          <td>$0.00</td>
+          <td>$0.04</td>
+          <td>510 Ω</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:right; font-weight:bold;">Total Cost</td>
+          <td style="font-weight:bold;">$55.31</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section id="prototype">
     <h2>Prototype</h2>
-<p>The following image shows the assembled prototype on a breadboard.</p>
+    <p>The following image shows the assembled prototype on a breadboard.</p>
 
-<!-- Photo Slider Start -->
-<div class="slider">
-  <div class="slides" id="slides">
-    <img src="Images\DigitalPtype.png">
-    <img src="Images\Prototype .JPEG">
-    <img src="Images\Still working.JPEG">
-    <img src="Images\Final.JPEG">
-  </div>
+    <!-- Photo Slider Start -->
+    <div class="slider">
+      <div class="slides" id="slides">
+        <img src="Images\DigitalPtype.png">
+        <img src="Images\Prototype .JPEG">
+        <img src="Images\Still working.JPEG">
+        <img src="Images\Final.JPEG">
+      </div>
 
-  <div class="arrow left" onclick="move(-1)">❮</div>
-  <div class="arrow right" onclick="move(1)">❯</div>
-</div>
+      <div class="arrow left" onclick="move(-1)">❮</div>
+      <div class="arrow right" onclick="move(1)">❯</div>
+    </div>
 
-<style> 
-  .slider {
-    width: 100%;
-    max-width: 1800px;
-    aspect-ratio: 2/1;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 15px;
-  }
+    <style>
+      .slider {
+        width: 100%;
+        max-width: 1800px;
+        aspect-ratio: 2/1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
 
-  .slides {
-    display: flex;
-    transition: transform 3s ease;
-    height: 100%;
-  }
+      .slides {
+        display: flex;
+        transition: transform 3s ease;
+        height: 100%;
+      }
 
-  .slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+      .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 40px;
-    background: rgba(0,0,0,0.4);
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 40px;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
 
-  .left { left: 10px; }
-  .right { right: 10px; }
-</style>
+      .left {
+        left: 10px;
+      }
 
-<script>
-  let index = 0;
+      .right {
+        right: 10px;
+      }
+    </style>
 
-  function move(direction) {
-    const slides = document.getElementById('slides');
-    const total = slides.children.length;
+    <script>
+      let index = 0;
 
-    index += direction;
-    if (index < 0) index = total - 1;
-    if (index >= total) index = 0;
+      function move(direction) {
+        const slides = document.getElementById('slides');
+        const total = slides.children.length;
 
-    slides.style.transform = `translateX(-${index * 600}px)`;
-  }
+        index += direction;
+        if (index < 0) index = total - 1;
+        if (index >= total) index = 0;
 
-  // Auto slide every 4 seconds
-  setInterval(() => move(1), 4000);
-</script>
-<!-- Photo Slider End -->
+        slides.style.transform = `translateX(-${index * 600}px)`;
+      }
+
+      // Auto slide every 4 seconds
+      setInterval(() => move(1), 4000);
+    </script>
+    <!-- Photo Slider End -->
 
   </section>
 
- <section id="code">
-  <h2>Arduino Code</h2>
-  <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on HC-SR04 distance readings.</p>
+  <section id="code">
+    <h2>Arduino Code</h2>
+    <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on HC-SR04 distance
+      readings.</p>
 
-  <button class="copy-btn" onclick="copyCode()">Copy</button>
-  <pre class="line-numbers">
+    <button class="copy-btn" onclick="copyCode()">Copy</button>
+    <pre class="line-numbers">
     <code id="arduinoCode" class="language-cpp">Loading...</code>
   </pre>
-</section>
+  </section>
 
-<script>
-  // Load code from external file
-  fetch("Code/dutch_traffic_light_code.ino")
-    .then(response => response.text())
-    .then(text => {
-      const codeElement = document.getElementById("arduinoCode");
-      codeElement.textContent = text;
-      Prism.highlightElement(codeElement);
-    });
+  <script>
+    // Load code from external file
+    fetch("Code/dutch_traffic_light_code.ino")
+      .then(response => response.text())
+      .then(text => {
+        const codeElement = document.getElementById("arduinoCode");
+        codeElement.textContent = text;
+        Prism.highlightElement(codeElement);
+      });
 
-  // Copy-to-clipboard button
-  function copyCode() {
-    const code = document.getElementById("arduinoCode").textContent;
-    navigator.clipboard.writeText(code);
-  }
-</script>
+    // Copy-to-clipboard button
+    function copyCode() {
+      const code = document.getElementById("arduinoCode").textContent;
+      navigator.clipboard.writeText(code);
+    }
+  </script>
 
 
   <section id="conclusion">
@@ -241,72 +475,73 @@
       sustainable through reusable components.</p>
   </section>
 
- <section id="references">
-  <h2>References</h2>
-  <p>
-    The following external resources and example projects demonstrate related Arduino applications 
-    using ultrasonic distance sensors, passive buzzers, and multicolour LEDs:
-  </p>
+  <section id="references">
+    <h2>References</h2>
+    <p>
+      The following external resources and example projects demonstrate related Arduino applications
+      using ultrasonic distance sensors, passive buzzers, and multicolour LEDs:
+    </p>
 
-  <ul>
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>Ultrasonic sensor projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
-      </a>
-    </li>
+    <ul>
+      <li>
+        Arduino Project Hub. (n.d.).
+        <em>Ultrasonic sensor projects.</em>
+        Arduino Project Hub.
+        <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank"
+          rel="noopener noreferrer">
+          https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
+        </a>
+      </li>
 
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>Buzzer projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://create.arduino.cc/projecthub/projects/tags/buzzer" target="_blank" rel="noopener noreferrer">
-        https://create.arduino.cc/projecthub/projects/tags/buzzer
-      </a>
-    </li>
+      <li>
+        Arduino Project Hub. (n.d.).
+        <em>Buzzer projects.</em>
+        Arduino Project Hub.
+        <a href="https://create.arduino.cc/projecthub/projects/tags/buzzer" target="_blank" rel="noopener noreferrer">
+          https://create.arduino.cc/projecthub/projects/tags/buzzer
+        </a>
+      </li>
 
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>LED projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/led
-      </a>
-    </li>
+      <li>
+        Arduino Project Hub. (n.d.).
+        <em>LED projects.</em>
+        Arduino Project Hub.
+        <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
+          https://projecthub.arduino.cc/projects/tags/led
+        </a>
+      </li>
 
-    <li>
-      Instructables. (n.d.). 
-      <em>Distance measurement using ultrasonic sensor.</em> 
-      Instructables. 
-      <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank" rel="noopener noreferrer">
-        https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
-      </a>
-    </li>
+      <li>
+        Instructables. (n.d.).
+        <em>Distance measurement using ultrasonic sensor.</em>
+        Instructables.
+        <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank"
+          rel="noopener noreferrer">
+          https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
+        </a>
+      </li>
 
-    <li>
-      Circuit Basics. (n.d.). 
-      <em>How to use an ultrasonic sensor with Arduino.</em> 
-      Circuit Basics. 
-      <a href="https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/" target="_blank" rel="noopener noreferrer">
-        https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/
-      </a>
-    </li>
+      <li>
+        Circuit Basics. (n.d.).
+        <em>How to use an ultrasonic sensor with Arduino.</em>
+        Circuit Basics.
+        <a href="https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/" target="_blank"
+          rel="noopener noreferrer">
+          https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/
+        </a>
+      </li>
 
-    <li>
-      Last Minute Engineers. (n.d.). 
-      <em>Ultrasonic sensor tutorial.</em> 
-      Last Minute Engineers. 
-      <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank" rel="noopener noreferrer">
-        https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
-      </a>
-    </li>
-  </ul>
-</section>
-
-
+      <li>
+        Last Minute Engineers. (n.d.).
+        <em>Ultrasonic sensor tutorial.</em>
+        Last Minute Engineers.
+        <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank"
+          rel="noopener noreferrer">
+          https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
 
 </body>
-
-  
